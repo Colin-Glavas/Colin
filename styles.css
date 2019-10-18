@@ -10,14 +10,17 @@ header{
     text-align: center;
     position: fixed;
     width: 100%;
-    z-index: 1;
+    z-index: 100;
     top: 0px;
     left: 0px;
+    text-align: center;
 }
 header h1{
     color: whitesmoke;
-    padding: 7px 14px;
+    padding: 8px 14px;
     display: inline-block;
+    border-style: solid;
+    border-width: 5px;
 }
 h2{
     color: crimson;
@@ -25,15 +28,18 @@ h2{
 
 .banner{
     position: relative;
+    left: 350px;
+    top: 60px;
 }
 .banner img{
     max-width: 50%;
+    
 }
 nav{
     background-color: whitesmoke;
     padding: 30px;
     position: sticky;
-    top: 90px;
+    top: 105px;
     text-align: center;
     z-index: 5;
     width: 100%;
@@ -55,12 +61,22 @@ nav li a{
 nav li a:hover{
     text-decoration: underline;
 }
+.info{
+    color: crimson;
+    padding: 20px 30px;
+
+}
+.code ul{
+    display: inline-block;
+    line-height: 5px;
+}
 @media screen and (max-width: 1860px){
     nav li{
         font-size: 30px;
         display: block;
         width: 100%;
         margin: 25px;
+        text-align: center;
     }
 }
 
@@ -70,33 +86,14 @@ nav li a:hover{
         display: block;
         width: 100%;
         margin: 15px;
+        text-align: center;
     }
     header{
         position: relative;
+        text-align: center;
     }
     nav{
         top: 0;
     }
-}
-.typewriter h1 {
-    overflow: hidden; /* Ensures the content is not revealed until the animation */
-    border-right: .15em solid whitesmoke; /* The typwriter cursor */
-    white-space: nowrap; /* Keeps the content on a single line */
-    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
-    letter-spacing: .15em; /* Adjust as needed */
-    animation: 
-      typing 4.5s steps(20, end),
-      blink-caret .7s step-end infinite;
-  }
-  
-  /* The typing effect */
-  @keyframes typing {
-    from { width: 0 }
-    to { width: 19% }
-  }
-  
-  /* The typewriter cursor effect */
-  @keyframes blink-caret {
-    from, to { border-color: transparent }
-    10% { border-color: whitesmoke; }
+
 }
